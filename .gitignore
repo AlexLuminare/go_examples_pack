@@ -1,0 +1,28 @@
+# Бинарные файлы и исполняемые файлы
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Директории
+bin/
+vendor/
+dist/
+.idea/
+.vscode/
+temp/
+
+# Go специфичные файлы
+go.work
+go.sum
+
+# Временные файлы
+*.tmp
+*.temp
+.DS_Store
+
+# Логи
+*.log
