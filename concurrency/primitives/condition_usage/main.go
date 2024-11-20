@@ -16,7 +16,7 @@ type buffer struct {
 	cond  *sync.Cond
 }
 
-func newBuffer() *buffer {
+func NewBuffer() *buffer {
 	b := &buffer{
 		data:  make([]int, 0, bufSize),
 		mutex: sync.Mutex{},
@@ -61,7 +61,7 @@ func (b *buffer) get() int {
 }
 
 func main() {
-	b := newBuffer()
+	b := NewBuffer()
 
 	go func() {
 		for i := 0; i < 20; i++ {
